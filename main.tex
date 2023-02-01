@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\hypersetup{
+    colorlinks=false,
+    pdftitle={Williams, Rey - Resume [SWE]},
+    pdfnewwindow=true
+    }
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItems}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Rey Williams}} & Email : \href{mailto:reynaldomwilliams@gmail.com}{\underline{reynaldomwilliams@gmail.com}}\\
+  & \href{https://www.linkedin.com/in/reynaldo-williams-swe/}{\underline{LinkedIn}} |
+  \href{https://github.com/reywilliams}{\underline{GitHub}} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Florida Atlantic University}{Boca Raton, FL}
+      {BS in Computer Science, Certificate/Concentration in Data Science \& Artificial Intelligence (AI) | GPA: 3.9}{Spring 2022}
+    
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{Java, JavaScript, TypeScript, C++, C, Python,  SQL, CSS, C\#}
+	\resumeSubItem{Frameworks/Platforms}{React-Redux, React Native, Node.js, Bootstrap, Jest, ASP.NET MVC, Azure }
+        \resumeSubItem{Certifications}{\href{https://www.credly.com/badges/5ad35c4a-9bf8-4a6f-9474-d68990573a51/public_url}{\underline{Azure Fundamentals (AZ 900)}}, \href{https://www.credly.com/badges/32e35ccb-e7ea-4882-b00a-ea1d3e56ef06/public_url}{\underline{Azure AI Fundamentals (AI 900)}}, CodePath Software Engineering}
+\resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+    {Microsoft}{Fargo, ND}
+    {Cloud Engineer - Azure IaaS VM \& Storage}{August 2022 - Present}
+        \resumeItemListStart
+            \resumeItems{Helping enterprise-level clients with their implementation and troubleshooting of Azure and other cloud technologies, including virtual machines, storage, networking, and data management.}
+            \resumeItems{Working closely with other teams, such as product development and customer service, to improve the design and functionality of Microsoft products.}
+            \resumeItems{Advising customers on their migrations from on-premises to the cloud via Microsoft services/tools such as Azure storage accounts and Azure File Sync.}
+            \resumeItems{Effectively resolved 100+ issue cases, meeting service level agreements in 100\% of cases.}
+        \resumeItemListEnd
+    \resumeSubheading
+    {Origami Risk}{Chicago, IL}
+    {Fullstack Software Engineer Intern}{May 2022 - August 2022}
+        \resumeItemListStart
+            \resumeItems{
+            Provided various risk management, risk analysis, and insurance solutions across technologies such as ASP.NET MVC, SQL Server, C\#, HTML/CSS, and JavaScript to over 800 live clients across multiple sectors like healthcare, insurance carriers, risk pools, and manufacturing.}
+            \resumeItems{Created an end-to-end component to streamline how organizations organize and conduct audits for risk assessments; allows for ~30\% faster execution of audits.}
+            \resumeItems{Improved testing accuracy to 97\% across (almost 50\% increase) all cases through an extensive refactoring of almost 20 different test suites across all layers and domains.
+            }
+            \resumeItems{Built new components to support and manage client product implementations across all layers (database, services, web UI).}
+        \resumeItemListEnd
+    \resumeSubheading
+    {Walmart Global Tech}{Bentonville, AR}
+    {Frontend Software Engineer Intern}{June 2021 - August 2021}
+        \resumeItemListStart
+            \resumeItems{Organized, developed, and deployed integral components to support the release of the next
+generation of point-of-sale and e-commerce components with technologies such as TypeScript, JavaScript, React, React-Redux, and React Native.}
+            \resumeItems{Implemented component to move away from the use of static images and push towards dynamic image fetching/modules for proprietary marketing and media content REST API.}
+            \resumeItems{Researched and documented the functionality of server-side caching to reduce bandwidth, reduce expenses, and deliver a quicker user experience on every transaction.}
+            \resumeItems{Implemented component to handle the fetching of 100s of product data and dynamically render them
+given store/site parameters alongside a full testing suite with 95\%+ coverage.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+%-----------WAVELENGTH-----------------
+\resumeItem{\href{https://github.com/ReyWilliams/WavelengthPlatform}{\underline{Wavelength - Tutoring Web App}}}{}
+\begin{description}[font=$\circ$]
+\item {Designed and managed full-stack application created from scratch using modified MERN stack. Uses MongoDB for a serverless back-end. Designed and implemented flexible schema to express relationships between users and object entities like courses. Intended to mimic a tutoring coordination web application that connects students with tutors. Demo \textbf{\href{https://youtu.be/139RpHbwhKU}{\underline{here}}}.}
+\item { Integrated Auth0's authentication API into the application, allowing users to securely log in and access protected resources and tailor their user experiences.}
+\item {Uses Zoom API to facilitate communication and allow users to create and join Zoom calls on the web.}
+\item {Uses Google Calendar API to allow users to create calendar entries for their sessions.}
+\end{description}
+%-----------Persistent Shopping Platform-----------------
+\resumeItem{\href{https://github.com/ReyWilliams/ShoppingCart}{\underline{Persistent Shopping Platform}}}{}
+\begin{description}[font=$\circ$]
+\item {Designed and implemented an end-to-end shopping cart application with interactive GUI in Java. Demo \textbf{\href{https://youtu.be/88_xpOJGbVg}{\underline{here}}}.}
+\item {Allows users to have a simplified shopping experience similar to popular web stores like Amazon. It allows for
+persistence across multiple user accounts and updates product inventory and views that are given.}
+\item {Used MVC (Model-View-Controller) architecture to separate the application's data, logic, and presentation layers.}
+\item {Wrote unit tests using JUnit to ensure the reliability and performance of the application.}
+\end{description}
+\resumeSubHeadingListEnd
+
+\end{document}
